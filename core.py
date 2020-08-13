@@ -1,7 +1,7 @@
 import time
 
 from src.foundation.mcc.coreInitializationManager import CoreInitializationManager
-from src.foundation.singleton.services import ServiceManager
+from src.foundation.singleton.serviceManager import ServiceManager
 from src.foundation.singleton.singleton import Singleton
 from src.foundation.tasks.taskManager import TaskManager
 from src.foundation.util import file, thread

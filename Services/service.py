@@ -1,4 +1,4 @@
-from src.foundation.singleton.services import ServiceManager
+from src.foundation.singleton.serviceManager import ServiceManager
 
 
 class Service:
