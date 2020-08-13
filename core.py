@@ -1,6 +1,6 @@
 import time
 
-from src.foundation.mcc.modelInitializationManager import ModelInitializationManager
+from src.foundation.mcc.coreInitializationManager import CoreInitializationManager
 from src.foundation.singleton.services import ServiceManager
 from src.foundation.singleton.singleton import Singleton
 from src.foundation.tasks.taskManager import TaskManager
@@ -11,7 +11,7 @@ class Core(Singleton):
 	def singleton_init(self):
 		file.init_folders()
 		self.task_manager = TaskManager()
-		ModelInitializationManager.initialize()
+		CoreInitializationManager.initialize()
 		ServiceManager()
 
 	def start(self):

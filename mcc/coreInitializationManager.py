@@ -1,4 +1,4 @@
-class ModelInitializationManager:
+class CoreInitializationManager:
 	registry = []
 
 	@classmethod
