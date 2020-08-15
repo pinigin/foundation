@@ -1,0 +1,2 @@
+class GlobalVar:
+	run = True
