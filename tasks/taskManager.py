@@ -17,6 +17,7 @@ class TaskManager:
 		self._task_id_inc += 1
 		task.id = self._task_id_inc
 		self.task_list[self._task_id_inc] = task
+		logger.debug("added task" + str(task) + "with id" + str(task.id))
 		return self._task_id_inc
 
 	def run(self):
