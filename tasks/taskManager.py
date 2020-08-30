@@ -29,11 +29,13 @@ class TaskManager:
 			task = self.task_list[task_id]
 			try:
 				if not task.started:
+					logger.info(f"started task {task} with id {task.id}")
+
 					task.start()
 				else:
 					if task.closed:
 						task = self.task_list.pop(task_id)
-						logger.debug(f"close task {task} with id {task.id}")
+						logger.info(f"close task {task} with id {task.id}")
 					else:
 						task.run()
 			except Exception as e:
