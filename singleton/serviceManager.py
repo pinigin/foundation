@@ -2,6 +2,10 @@ from src.foundation.singleton.singleton import Singleton
 
 
 class ServiceManager(Singleton):
+    """
+    Singleton class that store services, which can be get by link of service class
+    """
+
     registry = []
 
     def singleton_init(self):

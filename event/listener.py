@@ -4,6 +4,10 @@ logger = get_logger(__name__)
 
 
 class EventListener:
+    """
+        EventListener Listen the event, on what can be subscribed callable object, and then triggered
+    """
+
     def __init__(self):
         self._actions = []
 

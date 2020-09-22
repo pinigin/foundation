@@ -12,6 +12,7 @@ class Singleton:
 
 	def __init__(self):
 		if not self.was_initialized:
+			# run singleton init only one time
 			self.was_initialized = True
 			self.singleton_init()
 
